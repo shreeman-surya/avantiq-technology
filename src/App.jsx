@@ -7,6 +7,7 @@ import WhyUs from "./components/WhyUs";
 import About from "./components/About";
 import Process from "./components/Process";
 import Technology from "./components/Technology";
+import BrandVideo from "./components/BrandVideo";
 import Projects from "./components/Projects";
 import CallToAction from "./components/CallToAction";
 import Contact from "./components/Contact";
@@ -26,6 +27,7 @@ export default function App() {
         <About />
         <Process />
         {/* <Technology /> */}
+        <BrandVideo />
         <Projects />
         <CallToAction />
         <Contact />
