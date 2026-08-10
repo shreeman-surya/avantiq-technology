@@ -1,0 +1,420 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2857d6;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* offset anchor scroll for sticky header */
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+/* =========================================================
+   AVANTIQ HERO PRODUCT ANIMATIONS
+========================================================= */
+
+@keyframes showWebsite {
+  0%,
+  28% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  33%,
+  66% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showStore {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  35%,
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes showDashboard {
+  0%,
+  60% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  65%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  95%,
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes phoneFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes notification {
+  0%,
+  15% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+
+  25%,
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+}
+
+@keyframes softBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes chartDraw {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -500;
+  }
+}
+
+.animate-show-website {
+  animation: showWebsite 9s ease-in-out infinite;
+}
+
+.animate-show-store {
+  animation: showStore 9s ease-in-out infinite;
+}
+
+.animate-show-dashboard {
+  animation: showDashboard 9s ease-in-out infinite;
+}
+
+.animate-phone-float {
+  animation: phoneFloat 4s ease-in-out infinite;
+}
+
+.animate-notification {
+  animation: notification 6s ease-in-out infinite;
+}
+
+.animate-soft-bounce {
+  animation: softBounce 2.5s ease-in-out infinite;
+}
+
+.chart-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: chartDraw 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-show-website,
+  .animate-show-store,
+  .animate-show-dashboard,
+  .animate-phone-float,
+  .animate-notification,
+  .animate-soft-bounce,
+  .chart-line {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   ABOUT — DIGITAL PRODUCT ANIMATION
+========================================================= */
+
+@keyframes aboutPhoneFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes aboutCardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes aboutStatus {
+  0%,
+  100% {
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes aboutLine {
+  0% {
+    opacity: 0.15;
+    transform: scaleX(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  100% {
+    opacity: 0.15;
+    transform: scaleX(0.5);
+  }
+}
+
+@keyframes aboutBrowser {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.about-phone {
+  animation: aboutPhoneFloat 4s ease-in-out infinite;
+}
+
+.about-floating-card {
+  animation: aboutCardFloat 3s ease-in-out infinite;
+}
+
+.about-status {
+  animation: aboutStatus 3.5s ease-in-out infinite;
+}
+
+.about-line {
+  transform-origin: left center;
+  animation: aboutLine 2.5s ease-in-out infinite;
+}
+
+.about-browser {
+  animation: aboutBrowser 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-phone,
+  .about-floating-card,
+  .about-status,
+  .about-line,
+  .about-browser {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   ABOUT — BUSINESS ECOSYSTEM
+========================================================= */
+
+.about-grid {
+  background-image:
+    linear-gradient(rgba(30, 64, 175, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 64, 175, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.about-node {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-node:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.1);
+}
+
+.about-node-one {
+  animation: aboutNodeOne 4s ease-in-out infinite;
+}
+
+.about-node-two {
+  animation: aboutNodeTwo 4.5s ease-in-out infinite;
+}
+
+.about-node-three {
+  animation: aboutNodeThree 4.2s ease-in-out infinite;
+}
+
+.about-node-four {
+  animation: aboutNodeFour 4.7s ease-in-out infinite;
+}
+
+.about-core {
+  animation: aboutCore 4s ease-in-out infinite;
+}
+
+.about-pulse {
+  animation: aboutPulse 2s ease-in-out infinite;
+}
+
+@keyframes aboutNodeOne {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes aboutNodeTwo {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes aboutNodeThree {
+  0%,
+  100% {
+    transform: translateY(2px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes aboutNodeFour {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes aboutCore {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2);
+  }
+
+  50% {
+    transform: scale(1.025);
+    box-shadow: 0 25px 55px rgba(37, 99, 235, 0.25);
+  }
+}
+
+@keyframes aboutPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-node-one,
+  .about-node-two,
+  .about-node-three,
+  .about-node-four,
+  .about-core,
+  .about-pulse {
+    animation: none;
+  }
+}
