@@ -21,9 +21,9 @@ const serviceLinks = [
 ];
 
 const socials = [
-  { icon: LinkedinIcon, href: company.social.linkedin, label: "LinkedIn" },
+  //{ icon: LinkedinIcon, href: company.social.linkedin, label: "LinkedIn" },
   { icon: InstagramIcon, href: company.social.instagram, label: "Instagram" },
-  { icon: FacebookIcon, href: company.social.facebook, label: "Facebook" },
+  //{ icon: FacebookIcon, href: company.social.facebook, label: "Facebook" },
 ];
 
 export default function Footer() {

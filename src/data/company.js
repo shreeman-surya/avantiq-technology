@@ -18,7 +18,8 @@ export const company = {
   // Replace with real profile URLs when available.
   social: {
     linkedin: "#",
-    instagram: "#",
+    instagram:
+      "https://www.instagram.com/avantiq_technology?igsh=ZmY0ZDEza2huc3No",
     facebook: "#",
   },
 };
