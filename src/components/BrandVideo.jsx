@@ -1,4 +1,4 @@
-import { Sparkles, Code2, Terminal } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export default function BrandVideo() {
   return (
@@ -32,15 +32,14 @@ export default function BrandVideo() {
               className="w-full h-auto block"
             />
 
-            {/* AVANTIQ Tech Overlay */}
             {/* AVANTIQ Logo Overlay */}
-            <div className="absolute bottom-16 right-5 sm:right-8 pointer-events-none">
-              <div className="flex items-center gap-3 rounded-xl bg-white/95 px-3.5 py-2.5 shadow-lg border border-white/80 backdrop-blur-sm">
+            <div className="absolute bottom-6 right-2 sm:bottom-16 sm:right-8 pointer-events-none">
+              <div className="flex items-center gap-1.5 sm:gap-3 rounded-md sm:rounded-xl bg-white/95 px-2 py-1.5 sm:px-3.5 sm:py-2.5 shadow-lg border border-white/80 backdrop-blur-sm">
                 {/* AVANTIQ Icon */}
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-[9px] bg-[#0b2b63] flex items-center justify-center shrink-0">
+                <div className="w-6 h-6 sm:w-10 sm:h-10 rounded-[6px] sm:rounded-[9px] bg-[#0b2b63] flex items-center justify-center shrink-0">
                   <svg
                     viewBox="0 0 40 40"
-                    className="w-6 h-6 sm:w-7 sm:h-7"
+                    className="w-4 h-4 sm:w-7 sm:h-7"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -50,7 +49,7 @@ export default function BrandVideo() {
                       fill="#3167D8"
                     />
 
-                    {/* Inner cut / diagonal stroke */}
+                    {/* Inner cut */}
                     <path
                       d="M14.8 27.2L20 16.2L25.2 27.2H20.8L20 25.2L19.2 27.2H14.8Z"
                       fill="#0B2B63"
@@ -68,11 +67,11 @@ export default function BrandVideo() {
 
                 {/* Wordmark */}
                 <div className="flex items-center leading-none">
-                  <span className="text-[#142541] font-bold text-[18px] sm:text-[20px] tracking-[-0.045em]">
+                  <span className="text-[#142541] font-bold text-[11px] sm:text-[20px] tracking-[-0.045em]">
                     AVANTIQ
                   </span>
 
-                  <span className="text-[#2F65D9] font-bold text-[18px] sm:text-[20px] ml-[1px]">
+                  <span className="text-[#2F65D9] font-bold text-[11px] sm:text-[20px] ml-[1px]">
                     .
                   </span>
                 </div>
